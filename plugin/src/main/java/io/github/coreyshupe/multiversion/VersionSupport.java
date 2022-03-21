@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 public enum VersionSupport {
     V1_18_R1(NmsHandler1_18_R1::new, 758, 757),
-    Fallback(NmsHandler1_18_R1::new, 758, 757);
+    Fallback(NmsHandler1_18_R1::new);
 
     private final @NotNull NmsHandlerProvider nmsProvider;
     private final int[] protocolVersions;
